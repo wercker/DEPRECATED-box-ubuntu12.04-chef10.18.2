@@ -1,7 +1,7 @@
 name: ubuntu12.04-chef10.18.2
-version: 0.0.6
+version: 0.0.7
 description: Base box to use for running chef recipes
-scripts : |
+script : |
   sudo apt-get update
   sudo apt-get install -yq wget curl
   export CHEF_DEB=chef_10.18.2-2.ubuntu.11.04_amd64.deb
@@ -10,4 +10,3 @@ scripts : |
   sudo dpkg -i $CHEF_DEB
   chef-solo -v
   rm $CHEF_DEB
-script : echo hello
