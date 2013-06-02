@@ -1,8 +1,10 @@
 name: ubuntu12.04-chef10.18.2
-version: 0.0.7
+version: 0.0.8
 description: Base box to use for running chef recipes
 type : main
-os : ubuntu@12.04
+platform : ubuntu@12.04
+keywords :
+  - chef
 packages :
   - chef@10.18.2
 script : |
